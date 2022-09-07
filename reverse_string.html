@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReverseString</title>
+</head>
+<body>
+    <script>
+        function rev(original_str)
+        {
+            if(!original_str || original_str.length < 2 || typeof original_str!=='string'){
+                return 'not in a valid format';
+                }
+                const rev_array=[];
+                const str_length=original_str.length - 1;
+                for(let i=str_length;i>=0;i--){
+                    rev_array.push(original_str[i]);    
+                }
+            return rev_array.join('');
+        }
+        document.write(rev("raviteja "))
+    </script>
+</body>
+</html>
